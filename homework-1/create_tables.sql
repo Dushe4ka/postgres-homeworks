@@ -1,8 +1,8 @@
 -- SQL-команды для создания таблиц
 create table customers(
-customer_id varchar(20) primary key NOT null Unique,
-company_name varchar(20),
-contact_name varchar(20)
+customer_id varchar(30) primary key NOT null Unique,
+company_name varchar(50),
+contact_name varchar(50)
 );
 select * from customers;
 
@@ -10,7 +10,7 @@ create table employees(
 employee_id serial primary key,
 first_name varchar(20),
 last_name varchar(20),
-title varchar(20),
+title varchar(50),
 birth_date date,
 notes text
 );
